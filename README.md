@@ -2,4 +2,5 @@
 
 包含以下作业：
 
-[作业一：基于深度神经网络的猫狗图像分类](./image_classification/README.md)
+1. [作业一：基于深度神经网络的猫狗图像分类](./image_classification/README.md)
+2. [作业二：词向量训练](./word_vector/README.md)
