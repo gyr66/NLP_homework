@@ -1,0 +1,12 @@
+deepspeed --include localhost:0,2,3,4,5,6,7 run.py --train_file ./data/train.json \
+ --validation_file ./data/valid.json \
+ --test_file ./data/test.json \
+ --model_name_or_path facebook/mbart-large-cc25 \
+ --output_dir /mnt/ds3lab-scratch/yirguo/models \
+ --max_source_length 128 \
+ --num_beams 5 \
+ --per_device_train_batch_size 1 \
+ --per_device_eval_batch_size 1 \
+ --num_train_epochs 10 \
+ --do_train --do_eval --do_predict \
+ --deepspeed ds_config.json
